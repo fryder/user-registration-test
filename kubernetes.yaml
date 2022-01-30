@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: develivery-management
+  name: user-registration-test
   namespace: default
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: develivery-management
+      app: user-registration-test
   template:
     metadata:
       labels:
-        app: develivery-management
+        app: user-registration-test
     spec:
       containers:
-        - name: develivery-management
-          image: develivery-management:latest
+        - name: user-registration-test
+          image: user-registration-test:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
@@ -28,10 +28,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: develivery-management-balancer
+  name: user-registration-test-balancer
 spec:
   selector:
-    app: develivery-management
+    app: user-registration-test
   ports:
     - protocol: TCP
       port: 8000 # The port to expose to the outside

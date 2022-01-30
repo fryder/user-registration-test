@@ -1,4 +1,4 @@
-# develivery-management
+# user-registration-test
 
 This project can be used as a starting point to create your own Vaadin application with Spring Boot.
 It contains all the necessary configuration and some placeholder files to get you started.
@@ -21,7 +21,7 @@ This will build a JAR file with all the dependencies and front-end resources,
 ready to be deployed. The file can be found in the `target` folder after the build completes.
 
 Once the JAR file is built, you can run it using
-`java -jar target/develivery-management-1.0-SNAPSHOT.jar`
+`java -jar target/user-registration-test-1.0-SNAPSHOT.jar`
 
 ## Project structure
 
@@ -52,13 +52,13 @@ Once the JAR file is built, you can run it using
 To build the Dockerized version of the project, run
 
 ```
-docker build . -t develivery-management:latest
+docker build . -t user-registration-test:latest
 ```
 
 Once the Docker image is correctly built, you can test it locally using
 
 ```
-docker run -p 8080:8080 develivery-management:latest
+docker run -p 8080:8080 user-registration-test:latest
 ```
 
 
@@ -89,7 +89,7 @@ kubectl get services
 kubectl get deployments
 ```
 
-If the pods say `Container image "develivery-management:latest" is not present with pull policy of Never` then you have not built your application using Docker or there is a mismatch in the name. Use `docker images ls` to see which images are available.
+If the pods say `Container image "user-registration-test:latest" is not present with pull policy of Never` then you have not built your application using Docker or there is a mismatch in the name. Use `docker images ls` to see which images are available.
 
 If you need even more information, you can run
 

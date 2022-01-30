@@ -29,7 +29,6 @@ import com.vaadin.flow.router.RouteAlias;
  */
 @PageTitle("Registration")
 @Route(value = "Registration", layout = MainLayout.class)
-@RouteAlias(value = "", layout = MainLayout.class)
 @Tag("registration-view")
 @JsModule("./views/registration/registration-view.ts")
 @Uses(Icon.class)

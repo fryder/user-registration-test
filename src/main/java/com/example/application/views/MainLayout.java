@@ -26,8 +26,8 @@ import com.vaadin.flow.theme.Theme;
 /**
  * The main view is a top-level placeholder for other views.
  */
-@PWA(name = "develivery-management", shortName = "develivery-management", enableInstallPrompt = false)
-@Theme(themeFolder = "develivery-management")
+@PWA(name = "user-registration-test", shortName = "user-registration-test", enableInstallPrompt = false)
+@Theme(themeFolder = "user-registration-test")
 @PageTitle("Main")
 public class MainLayout extends AppLayout {
 
@@ -98,7 +98,7 @@ public class MainLayout extends AppLayout {
     }
 
     private Component createDrawerContent() {
-        H2 appName = new H2("develivery-management");
+        H2 appName = new H2("user-registration-test");
         appName.addClassNames("flex", "items-center", "h-xl", "m-0", "px-m", "text-m");
 
         com.vaadin.flow.component.html.Section section = new com.vaadin.flow.component.html.Section(appName,
